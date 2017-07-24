@@ -1,0 +1,192 @@
+/* 字体 */
+@font-face {
+	font-family: 'SourceHanSansCN-ExtraLight';
+	src: url('../fonts/SourceHanSansCN-ExtraLight.otf');
+}
+
+body {
+	padding-top: 50px;
+	font-family: 'SourceHanSansCN-ExtraLight';
+}
+
+section {
+	padding: 30px;
+}
+
+/* 使用Bootstrap固定导航时锚点会偏移 */
+
+section:target {
+	padding-top: 80px;
+}
+
+/* 巨幕 */
+
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: url(../img/introduction-bg.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;	
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.jumbotron p {
+	margin-top: 10px;
+}
+
+/* nav  */
+
+.navbar-default {
+	background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+/* about */
+
+#about p {
+	font-size: 20px;
+}
+
+/* skills */
+
+.progress-bar {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.progress-bar-green-sea {
+	background: #16a085;
+}
+
+/* portfolio */
+
+.portfolio {
+	position: relative;
+	margin: 20px 0 40px;
+}
+
+.portfolio img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.portfolio h3 {
+	margin-top: 0;
+}
+
+.portfolio p {
+	font-size: 15px;
+}
+
+.portfolio .tags {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.portfolio .more {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* experience */
+
+.timeline {
+	position: relative;
+	padding: 20px 0 20px;
+	list-style: none;
+}
+
+.timeline:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 25px;
+	content: ' ';
+	width: 3px;
+	background: #11c3a1;
+}
+
+.timeline li {
+	position: relative;
+}
+
+/* 清除浮动 */
+
+.timeline>li:before,
+.timeline>li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline>li:after {
+	clear: both;
+}
+
+.timeline-year {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 12px;
+	text-align: center;
+	background: #16a085;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.timeline-content {
+	position: relative;
+	float: right;
+	padding: 5px;
+	width: 85%;
+	border-radius: 2px;
+	border: 1px solid #11c3a1;
+	/*box-shadow: 0 1px 6px rgba(22, 160, 133, 0.175);*/
+}
+
+/* 向左的三角形 */
+
+.timeline-content:after {
+	position: absolute;
+	top: 25px;
+	left: -15px;
+	content: ' ';
+	border-top: 15px solid transparent;
+	border-right: 15px solid #11c3a1;
+	border-bottom: 15px solid transparent;
+}
+
+.timeline-heading h4 {
+	margin-top: 0;
+}
+
+.timeline-body p {
+	margin-bottom: 0;
+}
+
+/* contact */
+
+#contact {
+	background: #000;
+	color: #fff;
+}
+
+#contact ul {
+	padding: 0;
+	list-style: none;
+}
+
+#contact li {
+	padding: 10px;
+	font-size: 20px;
+}
