@@ -190,3 +190,12 @@ section:target {
 	padding: 10px;
 	font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+	section {
+		padding: 0;
+	}
+	.timeline-content {
+		width: 80%;
+	}
+}
